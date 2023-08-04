@@ -1,5 +1,8 @@
 ﻿namespace MauiControlPractice.Views;
 
+/// <summary>
+///     😁 メイン・ページ
+/// </summary>
 public partial class MainPage : ContentPage
 {
 	int count = 0;

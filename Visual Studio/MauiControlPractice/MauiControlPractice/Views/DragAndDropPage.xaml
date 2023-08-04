@@ -11,11 +11,9 @@
                    StrokeThickness="4"
                    HeightRequest="200"
                    WidthRequest="200">
-            <!--
             <Rectangle.GestureRecognizers>
-                <DragGestureRecognizer DragStarting="OnDragStarting" />
+                <DragGestureRecognizer DragStarting="DragGestureRecognizer_OnDragStarting" />
             </Rectangle.GestureRecognizers>
-            -->
         </Rectangle>
 
 
