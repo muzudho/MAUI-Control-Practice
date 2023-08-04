@@ -1,4 +1,4 @@
-﻿namespace MauiControlPractice;
+﻿namespace MauiControlPractice.Views;
 
 public partial class MainPage : ContentPage
 {
@@ -20,5 +20,14 @@ public partial class MainPage : ContentPage
 
 		SemanticScreenReader.Announce(CounterBtn.Text);
 	}
+
+    async void FilePickerPageButton_Clicked(object sender, EventArgs e)
+    {
+        var shellNavigationState = new ShellNavigationState("//FilePickerPage");
+
+        await Shell.Current.GoToAsync(
+            state: shellNavigationState);
+        // ここは通り抜ける。恐らく、UIスレッドを抜けた後に画面遷移する
+    }
 }
 
