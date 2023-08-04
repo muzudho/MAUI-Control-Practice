@@ -13,7 +13,10 @@
         Route="MainPage" />
 
     <ShellContent
-        Title="Home"
+        ContentTemplate="{DataTemplate views:DragAndDropPage}"
+        Route="DragAndDropPage" />
+
+    <ShellContent
         ContentTemplate="{DataTemplate views:FilePickerPage}"
         Route="FilePickerPage" />
 

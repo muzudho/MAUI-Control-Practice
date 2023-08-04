@@ -29,5 +29,14 @@ public partial class MainPage : ContentPage
             state: shellNavigationState);
         // ここは通り抜ける。恐らく、UIスレッドを抜けた後に画面遷移する
     }
+
+    async void DragAndDropPageButton_Clicked(object sender, EventArgs e)
+    {
+        var shellNavigationState = new ShellNavigationState("//DragAndDropPage");
+
+        await Shell.Current.GoToAsync(
+            state: shellNavigationState);
+        // ここは通り抜ける。恐らく、UIスレッドを抜けた後に画面遷移する
+    }
 }
 
