@@ -13,7 +13,11 @@
 
         <Button WidthRequest="300"
                 Text="画像ファイル読込"
-                Clicked="LoadFileButton_Clicked"/>
+                Clicked="LoadImageFileButton_Clicked"/>
+
+        <Button WidthRequest="300"
+                Text="複数画像ファイル読込"
+                Clicked="LoadSomeImagesButton_Clicked"/>
 
         <Label 
             Text="Welcome to .NET MAUI!"
