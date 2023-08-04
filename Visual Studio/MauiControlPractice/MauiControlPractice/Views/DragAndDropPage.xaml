@@ -23,11 +23,10 @@
                    StrokeThickness="4"
                    HeightRequest="200"
                    WidthRequest="200">
-            <!--
             <Rectangle.GestureRecognizers>
-                <DragGestureRecognizer DragStarting="OnDragStarting" />
+                <DropGestureRecognizer DragOver="DropGestureRecognizer_DragOver"
+                                       Drop="DropGestureRecognizer_Drop"/>
             </Rectangle.GestureRecognizers>
-            -->
         </Rectangle>
 
         <Label 
